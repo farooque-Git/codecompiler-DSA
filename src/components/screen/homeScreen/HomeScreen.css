@@ -1,0 +1,40 @@
+.homescreen-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sideNav {
+  flex: 1;
+  max-width: 20%;
+  background-color: #f8f9fa;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: fixed;
+}
+
+.center {
+  flex: 4;
+  max-width: 80%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .homescreen-container {
+    flex-direction: column;
+  }
+
+  .sideNav {
+    max-width: none;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .center {
+    max-width: none;
+    width: 100%;
+    padding: 10px;
+  }
+}
